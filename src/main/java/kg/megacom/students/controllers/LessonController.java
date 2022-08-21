@@ -1,0 +1,9 @@
+package kg.megacom.students.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController("/lesson")
+public class LessonController {
+
+
+}

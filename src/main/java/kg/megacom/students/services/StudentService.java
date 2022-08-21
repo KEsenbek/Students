@@ -6,7 +6,6 @@ import kg.megacom.students.models.Student;
 public interface StudentService {
 
 
-
     public Student createStudent (Student student);
 
 }
