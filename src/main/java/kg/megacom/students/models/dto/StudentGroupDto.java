@@ -18,13 +18,10 @@ public class StudentGroupDto {
 
 
     Long id;
-
     Date startDate;
     Date endDate;
-
     StudentGroupStatus studentGroupStatus;
     StudentDto student;
-
     GroupDto group;
 
 }

@@ -17,10 +17,7 @@ public class PaymentDto {
 
     Long id;
     Date paymentDate;
-
     PaymentStatus paymentStatus;
-
     GroupDto group;
-
     StudentDto student;
 }
