@@ -22,7 +22,7 @@ public class GroupMapperImpl implements GroupMapper {
         Group group = new Group();
         group.setId(groupDto.getId());
         group.setName(groupDto.getName());
-        group.setStarDate(groupDto.getStarDate());
+        group.setStartDate(groupDto.getStartDate());
         group.setEndDate(groupDto.getEndDate());
         group.setCourse(courseMapper.fromDto(groupDto.getCourse()));
         group.setTeacher(teacherMapper.fromDto(groupDto.getTeacher()));
@@ -44,7 +44,7 @@ public class GroupMapperImpl implements GroupMapper {
 
         groupDto.setId(group.getId());
         groupDto.setName(group.getName());
-        groupDto.setStarDate(group.getStarDate());
+        groupDto.setStartDate(group.getStartDate());
         groupDto.setEndDate(group.getEndDate());
         groupDto.setCourse(courseMapper.toDto(group.getCourse()));
         groupDto.setTeacher(teacherMapper.toDto(group.getTeacher()));

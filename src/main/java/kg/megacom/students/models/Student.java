@@ -20,6 +20,8 @@ public class Student {
     String name;
     String surname;
     String title;
+    @Column(name = "is_Deleted")
+    boolean isDeleted;
 
 
 }

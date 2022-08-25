@@ -1,11 +1,17 @@
 package kg.megacom.students.services;
 
-import kg.megacom.students.mappers.StudentMapper;
 import kg.megacom.students.models.Student;
+
+import java.util.List;
 
 public interface StudentService {
 
 
-    public Student createStudent (Student student);
+    Student createStudent (Student student);
 
+    Student updateStudent(Long id,String title);
+
+    Student deleteStudent(Long id);
+
+    List<Student> findAllNoDeleted();
 }

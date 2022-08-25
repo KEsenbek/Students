@@ -20,7 +20,7 @@ public class Group {
     Long id;
 
     String name;
-    Date starDate;
+    Date startDate;
     Date endDate;
 
     @ManyToOne
