@@ -1,11 +1,17 @@
 package kg.megacom.students.services;
 
 
+import kg.megacom.students.models.Group;
 import kg.megacom.students.models.Payment;
+import kg.megacom.students.models.Student;
+
+import java.util.List;
 
 public interface PaymentService {
 
-    Payment createPayment (Payment payment);
+   List<Payment> setPayment (Student student, Group group);
+
+
 
 
 }

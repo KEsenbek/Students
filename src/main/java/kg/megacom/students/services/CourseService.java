@@ -12,4 +12,7 @@ public interface CourseService {
     void delete (Long id);
 
 
+    Course findById(Long id);
+
+    int findByPeriod(int period);
 }

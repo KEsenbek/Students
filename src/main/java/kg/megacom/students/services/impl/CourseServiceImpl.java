@@ -22,6 +22,7 @@ public class CourseServiceImpl implements CourseService {
             newCourse.setPrice(course.getPrice());
             newCourse.setDuration(course.getDuration());
             newCourse.setTitle(course.getTitle());
+            newCourse.setPeriod(course.getPeriod());
             courseRepo.save(newCourse);
 
             return newCourse;
@@ -38,5 +39,14 @@ public class CourseServiceImpl implements CourseService {
     @Override
     public void delete(Long id) {
 
+    }
+
+    @Override
+    public Course findById(Long id) {
+        return courseRepo.findById(id).orElseThrow();}
+
+    @Override
+    public int findByPeriod(int period) {
+        return courseRepo.findByPeriod(period);
     }
 }

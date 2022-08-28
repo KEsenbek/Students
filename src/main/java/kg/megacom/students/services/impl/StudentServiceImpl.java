@@ -54,4 +54,9 @@ public class StudentServiceImpl implements StudentService {
     public List<Student> findAllNoDeleted() {
         return studentRepo.findByIsDeletedIsFalse();
     }
+
+    @Override
+    public Student findById(Long id) {
+        return studentRepo.findById(id).orElseThrow(()-> new RuntimeException("Студент не найден!"));
+    }
 }

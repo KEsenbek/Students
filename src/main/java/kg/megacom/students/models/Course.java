@@ -20,7 +20,8 @@ public class Course {
 
     String title;
     double price;
-    String duration;
+    int duration;
+    int period;
 
 
 }

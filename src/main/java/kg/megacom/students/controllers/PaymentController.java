@@ -2,10 +2,10 @@ package kg.megacom.students.controllers;
 
 import kg.megacom.students.models.Payment;
 import kg.megacom.students.services.PaymentService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Date;
+import java.util.List;
 
 @RestController
 @RequestMapping("/payment")
@@ -17,6 +17,9 @@ public class PaymentController {
         this.paymentService = paymentService;
     }
 
-    @PostMapping("/create")
-    public Payment createPayment (@RequestBody Payment payment) {return paymentService.createPayment(payment);}
+//    @PostMapping("/create")
+//    public Payment createPayment (@RequestBody Payment payment) {return paymentService.createPayment(payment);}
+
+
+
 }

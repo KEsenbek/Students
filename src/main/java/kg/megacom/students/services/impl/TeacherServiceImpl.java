@@ -41,4 +41,9 @@ private final TeacherRepo teacherRepo;
     public void deleteTeacher(Long id) {
 
     }
+
+    @Override
+    public Teacher findById(Long id) {
+        return teacherRepo.findById(id).orElseThrow();
+    }
 }

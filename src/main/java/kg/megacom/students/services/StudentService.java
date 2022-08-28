@@ -14,4 +14,6 @@ public interface StudentService {
     Student deleteStudent(Long id);
 
     List<Student> findAllNoDeleted();
+
+    Student findById(Long id);
 }

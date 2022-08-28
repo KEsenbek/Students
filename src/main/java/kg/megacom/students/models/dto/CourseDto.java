@@ -19,7 +19,7 @@ public class CourseDto {
     Long id;
     String title;
     double price;
-    String duration;
+    int duration;
 
 
 }

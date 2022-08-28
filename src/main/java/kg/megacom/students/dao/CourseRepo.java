@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CourseRepo extends JpaRepository<Course,Long> {
+
+    int findByPeriod(int period);
 }
